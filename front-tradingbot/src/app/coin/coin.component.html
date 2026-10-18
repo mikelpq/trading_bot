@@ -1,0 +1,18 @@
+<div class="card-container">
+  @if (coin) {
+    <mat-card appearance="outlined" class="card">
+      <mat-card-header>
+        <mat-card-title>{{ coin.name }} - {{ coin.symbol }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="price-section">
+          <div>Buy price: <span>{{ coin.buyPrice }}</span></div>
+          <div>Sell price: <span>{{ coin.sellPrice }}</span></div>
+          <div>Spot price: <span>{{ coin.spotPrice }}</span></div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>
+
+
